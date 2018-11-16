@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsProject</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About", simple_pages_about_path %></li>
+    <li><%= link_to "Contact", simple_pages_contact_path %></li>
+  </ul>
+</nav>
+
+<%= yield %>
+  <h1>Welcome to Bike Berlin</h1>
+  <h2>Your source for used bikes in Berlin</h2>
+  <%# test_variable =42 %>
+  <%#= test_variable %>
+  <!--footer>
+    &copy; 2018 Bike Berlin
+  </footer-->
+  <body>
+
+  </body>
+  </html>

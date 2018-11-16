@@ -8,8 +8,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+<p>Welcome! The date and time is <%= Time.now %></p>
+  <%= yield %>
+
+  <footer>
+    &copy; 2018 Bike Berlin
+  </footer>
+  <body>
+
   </body>
 </html>
