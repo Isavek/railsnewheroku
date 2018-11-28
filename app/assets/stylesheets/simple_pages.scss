@@ -1,3 +1,85 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-size: 45px;
+  padding: inherit;
+  font-weight: bold;
+  color: red;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  // border: 1px solid black;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: helvetica;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -50px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 50px;
+}
+.site-footer {
+  background: orange;
+  padding-top: 10px;
+}
+#img-responsive {
+border: solid, red, 2px;
+}
+
+
+
+$navbar-height: 80px;
+$navbar-color: #5F4A46;
+$navbar-text-color: white;
+$logo-padding: 0 30px; // left padding
+$list-padding: 30px; //right padding
+$logo-size: 24px;
+
+.navbar {
+  height: $navbar-height;
+  background-color: $navbar-color;
+  color: $navbar-text-color;
+
+  .logo {
+    display: inline-block;
+    line-height: $navbar-height;
+    padding: $logo-padding;
+    font-size: $logo-size;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: $list-padding;
+
+    .list-item {
+      text-decoration: none;
+      padding:  10px, 2px;
+      color: rgba(255,255,255,0.8);
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .list-item:hover {
+      color: rgba(255,255,255,1);
+      background-color: rgba(0,0,0,0.2);
+      border-bottom: 3px solid blue;
+    }
+  }
+}

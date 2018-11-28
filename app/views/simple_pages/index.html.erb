@@ -8,15 +8,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<body>
-  <nav>
-  <ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", simple_pages_about_path %></li>
-    <li><%= link_to "Contact", simple_pages_contact_path %></li>
-  </ul>
-</nav>
 
+<%= image_tag("race-bike.jpg", class: "img-responsive", size: "400x150")  %>
 <%= yield %>
   <h1>Welcome to Bike Berlin</h1>
   <h2>Your source for used bikes in Berlin</h2>
