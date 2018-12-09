@@ -1,2 +1,0 @@
-class BikesForall < ApplicationRecord
-end
