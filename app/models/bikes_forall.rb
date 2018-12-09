@@ -1,0 +1,2 @@
+class BikesForall < ApplicationRecord
+end

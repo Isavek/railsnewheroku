@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name: Bike</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description: Great Bike</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url: race-bike.jpg</strong>
+  <%= @product.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
