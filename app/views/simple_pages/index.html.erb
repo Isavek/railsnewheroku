@@ -13,6 +13,19 @@
 <%= yield %>
   <h1>Welcome to Bike Berlin</h1>
   <h2>Your source for used bikes in Berlin</h2>
+
+  <div class="row">
+  <% @orders.each do |order| %>
+    <div class="col-sm">
+      <h3>
+        Order # <%= order.id %>:
+        <%= link_to order.product.name, order %>
+      </h3>
+      <p><%= order.product.description %></p>
+      <strong>$ <%= order.product.price %></strong>
+    </div><!-- /col -->
+  <% end %>
+</div>
   <%# test_variable =42 %>
   <%#= test_variable %>
   <!--footer>
