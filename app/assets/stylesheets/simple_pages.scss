@@ -39,7 +39,7 @@ border: solid, red, 2px;
 
 
 
-$navbar-height: 80px;
+$navbar-height: 70px;
 $navbar-color: #5F4A46;
 $navbar-text-color: white;
 $logo-padding: 0 30px; // left padding
@@ -50,6 +50,8 @@ $logo-size: 24px;
   height: $navbar-height;
   background-color: $navbar-color;
   color: $navbar-text-color;
+  padding: inherit;
+
 
   .logo {
     display: inline-block;
@@ -74,6 +76,8 @@ $logo-size: 24px;
       height: 100%;
       display: flex;
       align-items: center;
+      float: left;
+      margin: 4px;
     }
 
     .list-item:hover {
