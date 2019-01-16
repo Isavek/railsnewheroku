@@ -53,6 +53,7 @@ $logo-size: 24px;
   padding: inherit;
 
 
+
   .logo {
     display: inline-block;
     line-height: $navbar-height;
@@ -70,6 +71,7 @@ $logo-size: 24px;
     margin-right: $list-padding;
 
     .list-item {
+      font-size: 15px;
       text-decoration: none;
       padding:  10px, 2px;
       color: rgba(255,255,255,0.8);
@@ -84,6 +86,10 @@ $logo-size: 24px;
       color: rgba(255,255,255,1);
       background-color: rgba(0,0,0,0.2);
       border-bottom: 3px solid blue;
+    }
+    .search{
+      padding-left: 275px;
+      margin:auto;
     }
   }
 }
