@@ -1,3 +1,5 @@
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -10,10 +12,7 @@
   <%= @product.description %>
 </p>
 
-<p>
-  <strong>Image url: race-bike.jpg</strong>
-  <%= @product.image_url %>
-</p>
+
 
 <p>
   <strong>Colour:</strong>
@@ -27,3 +26,23 @@
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+<article class="container products-show">
+	<h1> Product:</h1>
+	<p id="notice"><%= notice %></p>
+	<!-- <div class="row align-items-center ratings-preview">
+	<p class="col-sm">
+
+	<i class="far fa-star"></i>
+</p>
+</div> -->
+<!-- <strong>Image url:</strong> <%= @product.image_url %> -->
+<section class="row">
+	<div class="col-sm-6 img">
+		<%= image_tag(@product.image_url, class: "img-fluid") %>
+	
+	</div>
+
+
+
+
+</article>
