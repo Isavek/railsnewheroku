@@ -45,7 +45,9 @@
   content: "\f123";
 }
 
-.rating {
+.rating, .rated{
   width: 20px;
+  height: 27px;
+  display: inline-flex;
 
 }

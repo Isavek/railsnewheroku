@@ -1,6 +1,8 @@
 class Product < ApplicationRecord
+ validates :name, presence: true
  has_many :orders
  has_many :comments, dependent: :destroy
+end
 
  def highest_rating_comment
     comments.rating_desc.first
@@ -18,5 +20,4 @@ class Product < ApplicationRecord
     elsif Rails.env.production?
        @products = Product.where('name ilike ?', "%#{search_term}%")
   end
-end
 end
