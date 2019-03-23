@@ -3,6 +3,8 @@
 <head>
   <title>RailsProject</title>
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -20,7 +22,7 @@
       <div class="list">
         <ul>
          <li class="list-item"><%= link_to "Home", root_path %></li>
-         <li class="list-item"><%= link_to "Products", simple_pages_landing_page_path %></li>
+         <li class="list-item"><%= link_to "Products", products_path %></li>
          <li class="list-item"><%= link_to "About", simple_pages_about_path %></li>
          <li class="list-item"><%= link_to "Contact", simple_pages_contact_path %></li>
          <li class="list-item"><%= link_to 'Orders', orders_path %></li>
