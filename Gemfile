@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
  gem 'rspec-rails', '~> 3.8'
  gem 'sqlite3'
+ gem "factory_bot_rails", "~> 4.0"
 end
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
