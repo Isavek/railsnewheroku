@@ -23,36 +23,45 @@
   <%= @product.price %>
 </p>
 
+<%= form_with(url: '/payments/create') do |form| %>
+  <%= render partial: "shared/stripe_checkout_button" %>
+<% end %>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 <article class="container products-show">
-	<h1> Product:</h1>
-	<p id="notice"><%= notice %></p>
-	<!-- <div class="row align-items-center ratings-preview">
-	<p class="col-sm">
+  <h1> Product:</h1>
+  <p id="notice"><%= notice %></p>
+  <!-- <div class="row align-items-center ratings-preview">
+  <p class="col-sm">
 
-	<i class="far fa-star"></i>
+  <i class="far fa-star"></i>
 </p>
 </div> -->
 <!-- <strong>Image url:</strong> <%= @product.image_url %> -->
 <section class="row">
-	<div class="col-sm-6 img">
-		<%= image_tag(@product.image_url, class: "img-fluid") %>
+  <div class="col-sm-6 img">
+    <%= image_tag(@product.image_url, class: "img-fluid") %>
 
 
 
-<%= render 'new_comment' %>
+    <%= render 'new_comment' %>
 
-
-	</div>
-
-<%= render 'comments' %>
-
-</article>
-<div class="digg_pagination">
-    <div class="page_info">
-      <%= page_entries_info @comments %>
-    </div>
-    <%= will_paginate @comments, renderer: BootstrapPagination::Rails, :container => false %>
 
   </div>
+
+  <%= render 'comments' %>
+
+
+
+</article>
+
+
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @comments %>
+  </div>
+  <%= will_paginate @comments, renderer: BootstrapPagination::Rails, :container => false %>
+
+</div>
