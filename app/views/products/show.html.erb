@@ -42,9 +42,9 @@
 <!-- <strong>Image url:</strong> <%= @product.image_url %> -->
 <section class="row">
   <div class="col-sm-6 img">
-  <%= image_tag(@product.image_url, width: "300", class: "img-zoom") %>
+  <%= image_tag(@product.image_url, width: "300", class: "img-zoom", data_zoom_image: @product.image_url) %>
 
-
+byebug
 
     <%= render 'new_comment' %>
 
