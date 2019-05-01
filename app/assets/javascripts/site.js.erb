@@ -16,17 +16,8 @@ var refreshRating = function() {
   });
 };
 
-$(document).on('turbolinks:load ajaxSuccess', function() {
+$(document).on('turbolinks:load ajaxSucces', function() {
     refreshRating();
-    $(".img-zoom").elevateZoom({
-      responsive: true,
-      zoomType  : "lens",
-      lensShape : "box",
-      lensSize  :300,
-      zoomWindowFadeIn : 600,
-      zoomWindowFadeOut :600,
-      lensFadeIn : 300,
-      lensFadeOut : 300
 
-    });
+    $('.img-zoom').elevateZoom();
 });
