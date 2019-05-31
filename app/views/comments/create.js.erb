@@ -1,7 +1,6 @@
-$("#new_comment").html("Thanks for your review!");
 
-$('.product-reviews').prepend("<%= j render @comment %>");
 
+//when user adds new comment, comment box hides and displays message
+$("#new_comment").html("Thank you for your review!");
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
-
 refreshRating();
